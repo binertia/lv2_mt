@@ -19,9 +19,9 @@ static void	server_sig_handler(int sig_type, siginfo_t *info, void *ucontent)
 
 int	main(void)
 {
-	struct sigaction		sig;
-	pid_t				pid;
-	char				*pid_str;
+	struct sigaction	sig;
+	pid_t			pid;
+	char			*pid_str;
 
 	pid = getpid();
 	pid_str = ft_itoa(pid);
