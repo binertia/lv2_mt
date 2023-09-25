@@ -2,7 +2,7 @@
 
 void	handle_server_sig(int sig_type, siginfo_t *sig_info, void *content)
 {
-	static int				bit;
+	static int		bit;
 	static unsigned char	c;
 	
 	if (!bit)
