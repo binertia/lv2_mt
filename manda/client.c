@@ -2,7 +2,7 @@
 
 static void	send_binary(char *str, pid_t pid)
 {
-	int				bit;
+	int		bit;
 	unsigned char	c;
 
 	if (*str == 0)
