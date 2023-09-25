@@ -2,7 +2,7 @@
 
 static void	server_sig_handler(int sig_type, siginfo_t *info, void *ucontent)
 {
-	static int				bit;
+	static int		bit;
 	static unsigned char	c;
 
 	if (!bit)
@@ -19,7 +19,7 @@ static void	server_sig_handler(int sig_type, siginfo_t *info, void *ucontent)
 
 int	main(void)
 {
-	struct sigaction	sig;
+	struct sigaction		sig;
 	pid_t				pid;
 	char				*pid_str;
 
