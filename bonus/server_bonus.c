@@ -42,9 +42,12 @@ void	wait_for_signal(void)
 int	main(void)
 {
 	pid_t	pid;
+	char	*pid_str;
 
-	write(STDOUT_FILENO, ft_itoa(getpid()), ft_strlen(ft_itoa(getpid())));
+	pid_str = ft_itoa(getpid());
+	write(STDOUT_FILENO, pid_str, ft_strlen(pid_str));
 	write(STDOUT_FILENO, " : Server PID\n", 14);
+	free(pid_str);
 	wait_for_signal();
 	while(1)
 		pause();
