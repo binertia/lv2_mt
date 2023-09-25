@@ -15,7 +15,7 @@ void	send_nul_term(int target_pid)
 
 void	send_binary(char *str, pid_t target_pid)
 {
-	int	bit;
+	int		bit;
 	unsigned char	c;
 
 	if (ft_strlen(str) == 0)
@@ -58,7 +58,7 @@ void	handle_client_sig(int sig_type, siginfo_t *sig_info, void *ucontent)
 
 int	main(int ac, char* av[])
 {
-	pid_t	target_pid;
+	pid_t			target_pid;
 	struct sigaction	sig;
 
 	if (ac != 3)
